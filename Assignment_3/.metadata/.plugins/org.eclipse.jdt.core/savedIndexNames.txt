@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+C:\Wipro\Assignments\Day2\Assignment 3\.metadata\.plugins\org.eclipse.jdt.core
-110844903.index
-3139015902.index
-1865797976.index
