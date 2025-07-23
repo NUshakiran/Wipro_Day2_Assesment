@@ -68,15 +68,21 @@ public class MenuDrivenMathOps {
 			case 4: 
 				System.out.print("Enter how many terms of Fibonacci to print: ");
 				int num3 = sc.nextInt();
-				int a=0;
-				int b=1;
-				System.out.print("Fibonacci Series : " + a+","+b );
-				for (int i=2;i<num3;i++) {
-					int next = a+b;
-					System.out.print("," + next);
-					a = b;
-					b = next;
-				}
+				if (num3 <= 0) {
+			            System.out.println("Please enter a positive number of terms.");
+			        } else if (num3 == 1) {
+			            System.out.println("Fibonacci Series: 0");
+			        } else {
+			            int a = 0, b = 1;
+			            System.out.print("Fibonacci Series: " + a + ", " + b);
+			            for (int i = 2; i < num3; i++) {
+			                int next = a + b;
+			                System.out.print(", " + next);
+			                a = b;
+			                b = next;
+			            }
+			            System.out.println();
+			        }
 				break;
 			case 5: System.out.println("Exit"); 
 				break;
