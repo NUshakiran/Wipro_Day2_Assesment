@@ -45,17 +45,19 @@ public class MenuDrivenMathOps {
 			case 3 :
 				System.out.println("Enter a number");
 				int num2 = sc.nextInt();
-				int count =1;
+				int count =0;
 				if (num2<=1) {
 					System.out.println(num2+" is not a prime number");
 				}
 				else {
-					for (int i=2;i<num2;i++) {
-						if(num2%i==0) {
-							count++;
-						}
+					int i = 2;
+					while (i < num2) {
+					    if (num2 % i == 0) {
+					        count++;
+					    }
+					    i++;
 					}
-					if(count == 1) {
+					if(count == 0) {
 						System.out.println(num2 + " is a prime number");
 					}
 					else {
@@ -64,7 +66,7 @@ public class MenuDrivenMathOps {
 				}
 				break;
 			case 4: 
-				System.out.println("Enter a number upto 50");
+				System.out.print("Enter how many terms of Fibonacci to print: ");
 				int num3 = sc.nextInt();
 				int a=0;
 				int b=1;
